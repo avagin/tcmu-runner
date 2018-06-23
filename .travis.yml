@@ -1,0 +1,9 @@
+language: c
+sudo: required
+dist: trusty
+install:
+  - sudo apt-get update
+  - sudo apt-get install -qq libnl-3-dev zlib1g-dev zlib-bin kmod libkmod-dev gcc make cmake
+script:
+  - cmake .
+  - make
